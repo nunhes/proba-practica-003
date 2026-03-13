@@ -1,80 +1,107 @@
-<!-- 
- CORRIXIR: 
- 
- - Engadir idioma galego
- - Engadir codoficacion UTF-8
- - Endgadir meta viewport
- - Engadir meta description
- - Engadir meta keywords
- - Enlazar CSS - despois de corrixir a arquitectura do sitio con cartafoles independentes para cada tipo de arquivo
- - Engadir favicon
- - Cambiar divs por etiquetas semánticas
- - main max-width 1200px
-      - padding 20px
-      - margin 0 auto
- - Engadir label aos inputs
- - Engadir atributos necesarios ao formulario, aos inputs e ao botón de envío 
- - Enlazar JS - despois de corrixir a arquitectura do sitio con cartafoles independentes para cada tipo de arquivo
- 
- -->
-
 <!DOCTYPE html>
-<html>
+<html lang="gl">
 
 <head>
-    <title>Clínica Dental</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Clínica Dental Sonrisa - Servizos dentais profesionais, odontoloxía estética e coidado dental integral.">
+  <meta name="keywords" content="dentista, clínica dental, odontoloxía, limpeza dental, implantes">
+
+  <title>Clínica Dental Sonrisa</title>
+
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="header">
-        <div>Logo</div>
-        <div class="menu">
-            <a>Inicio</a>
-            <a>Servizos</a>
-            <a>Contacto</a>
-        </div>
+
+<header>
+  <h1>Clínica Dental Sonrisa</h1>
+
+  <nav>
+    <ul>
+      <li><a href="#servizos">Servizos</a></li>
+      <li><a href="#sobre">Sobre nós</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section id="sobre">
+  <h2>Sobre a nosa clínica</h2>
+  <p>
+    Na Clínica Dental Sonrisa ofrecemos tratamentos dentais profesionais
+    con tecnoloxía moderna e atención personalizada.
+  </p>
+</section>
+
+<section id="servizos">
+  <h2>Servizos</h2>
+
+  <div class="servizos-grid">
+
+    <article class="servizo">
+      <h3>Limpeza dental</h3>
+      <p>Hixiene profesional para manter os dentes saudables.</p>
+    </article>
+
+    <article class="servizo">
+      <h3>Implantes</h3>
+      <p>Reposición de pezas dentais con implantes de alta calidade.</p>
+    </article>
+
+    <article class="servizo">
+      <h3>Ortodoncia</h3>
+      <p>Corrección da posición dental con tratamentos modernos.</p>
+    </article>
+
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Solicitar cita</h2>
+
+  <form id="formulario">
+
+    <div class="campo">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
     </div>
 
-    <div class="contenido">
-        <div id="inicio">
-            <h1>Benvidos á nosa clínica</h1>
-            <p>Coidamos do teu sorriso en Santiago</p>
-        </div>
-
-        <div id="servizos">
-            <h2>Os nosos servizos</h2>
-            <div class="servizos">
-                <div class="servizo">
-                    <h3>Limpieza Dental</h3>
-                    <p>Profesional</p>
-                </div>
-                <div class="servizo">
-                    <h3>Revisións</h3>
-                    <p>Chequeos</p>
-                </div>
-                <div class="servizo">
-                    <h3>Urxencias</h3>
-                    <p>Dispoñibles</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="contacto">
-            <h2>Pide cita</h2>
-            <form>
-                <input type="text">
-                <input type="tel">
-                <button>Enviar</button>
-            </form>
-        </div>
+    <div class="campo">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
     </div>
 
+    <div class="campo">
+      <label for="mensaxe">Mensaxe</label>
+      <textarea id="mensaxe" name="mensaxe" required></textarea>
+    </div>
+
+    <button type="submit">Enviar</button>
+
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Clínica Dental Sonrisa</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
     <div class="footer">
         <p>© 2026 Clínica Dental Sonrisa</p>
         <p>Calle Ficticia, 123 - Santiago</p>
     </div>
 
 </body>
+
 
 </html>
